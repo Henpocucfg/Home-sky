@@ -1,4 +1,4 @@
-from src.masks import get_mask_card_number, get_mask_account
+from src.masks import get_mask_account, get_mask_card_number
 
 
 def mask_account_card(data: str) -> str:
@@ -31,3 +31,7 @@ def get_date(date_str: str) -> str:
     date_part = date_str.split("T")[0]
     year, month, day = date_part.split("-")
     return f"{day}.{month}.{year}"
+
+
+print(mask_account_card("Visa Platinum 7000792289606361"))
+print(get_date("2024-03-11T02:26:18.671407"))
