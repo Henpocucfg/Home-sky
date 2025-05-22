@@ -47,4 +47,3 @@ authors = ["Your Name <you@example.com>"]
 packages = [
     { include = "src", from = "." }
 ]
-
